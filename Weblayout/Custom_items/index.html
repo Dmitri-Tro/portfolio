@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costom elements</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/choices.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+    <link rel="stylesheet" href="/css/justValidateTooltip.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
+    <script defer src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script defer src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script defer src="/just-validate.min.js"></script>
+    <script defer src="/inputmask.min.js"></script>
+    <script defer src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <script defer src="/choices.min.js"></script>
+    <script defer src="https://api-maps.yandex.ru/2.1/?apikey=f9ea41b5-9831-430c-b6ef-eb998d768c3a&lang=ru_RU" type="text/javascript"></script>
+    <script defer src="/script.js"></script>
+</head>
+<body>
+    <div class="conteiner">
+
+            <ul class="custom-checkboxes">
+                <h2 class="checkbox-title">Categories:</h2>
+                <li class="checkbox-items">
+                    <label class="check-lable" for="dinos">
+                        <input type="checkbox" name="dinos-check" id="dinos" class="checkbox">
+                        Dinosaurs
+                        <span class="custom-chec"></span>
+                    </label>
+                </li>
+                <li class="checkbox-items">
+                    <label class="check-lable" for="bears">
+                        <input type="checkbox" name="bears-check" id="bears" class="checkbox">
+                        Bears
+                        <span class="custom-chec"></span>
+                </label>
+                </li>
+                <li class="checkbox-items">
+                    <label class="check-lable" for="roe-deers">
+                        <input type="checkbox" name="roe-deers-check" id="roe-deers" class="checkbox">
+                        Roe deers
+                        <span class="custom-chec"></span>
+                    </label>
+                </li>
+                <li class="checkbox-items">
+                    <label class="check-lable" for="foxes">
+                        <input type="checkbox" name="foxes-check" id="foxes" class="checkbox">
+                        Foxes
+                        <span class="custom-chec"></span>
+                    </label>
+                </li>
+                <li class="checkbox-items">
+                    <label class="check-lable" for="wolves">
+                        <input type="checkbox" name="wolves-check" id="wolves" class="checkbox">
+                        Wolves
+                        <span class="custom-chec"></span>
+                    </label>
+                </li>
+                <li class="checkbox-items">
+                    <label class="check-lable" for="deers">
+                        <input type="checkbox" name="deers-check" id="deers" class="checkbox">
+                        Deers and mooses
+                        <span class="custom-chec"></span>
+                    </label>
+                </li>
+            </ul>
+
+        <div class="costom-select">
+            <select name="custom-select"  id="selectCustom">
+                <option class="select-title" value="">Material</option>
+                <option class="select-item">Wood</option>
+                <option class="select-item">Metal</option>
+                <option class="select-item">Stone</option>
+                <option class="select-item">Plastic</option>
+                <option class="select-item">Composite</option>
+                <option class="select-item">Gypsum</option>
+            </select>
+        </div>
+
+        <div class="custom-map">
+            <div class="map" id="map"></div>
+        </div>
+
+        <div data-simplebar class="custom-scroll">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio, neque beatae repellendus soluta ratione
+            corrupti iusto praesentium! Quam, voluptatem facere? Quis facilis similique, veritatis ut quo amet temporibus debitis!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit delectus excepturi voluptatum quo voluptatem sequi odit
+            iste adipisci, autem consequatur quia ad officiis magni maiores animi odio vitae sapiente at? Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Blanditiis nemo soluta, magni aliquid odio totam perferendis iusto fugiat sapiente
+            delectus ad cumque tempore recusandae officia beatae quas unde maxime ducimus. Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Laudantium, tempore ipsum quasi, molestias placeat repellat dignissimos ut omnis culpa, dolor voluptate
+            maxime officia ab consectetur quibusdam dolorum eligendi mollitia et. Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Quidem distinctio aut rem, ullam sunt eligendi neque vero molestias recusandae ratione aperiam tempore architecto
+            aspernatur. Modi facilis porro laudantium minima est.
+        </div>
+
+        <form action="#" class="send-form">
+            <div class="send-form-info">
+                <div class="just-validate-tooltip-container">
+                    <input type="text" name="name" maxlength="251" placeholder="Name*" data-validate-field="name" class="send-form-input">
+                </div>
+                <div class="just-validate-tooltip-container">
+                    <input type="tel" name="tel" placeholder="Phone*" data-validate-field="tel" data-validate-rules="phone"  class="send-form-input">
+                </div>
+                <div class="just-validate-tooltip-container">
+                    <input type="email" name="email" placeholder="E-mail*" data-validate-field="mail"  class="send-form-input">
+                </div>
+                <div class="js-validate-error-label">The Name field is not correctly.</div>
+
+            </div>
+            <div class="send-form-btn">
+              <button type="submit" class="form-btn btn">Order</button>
+            </div>
+        </form>
+
+        <div class="tooltips">
+            <div class="custom-tooltip-1">
+              It should be noted that socio-economic development contributes to improving the quality of rethinking
+              foreign economic policies.
+                <div class="tooltip-1">
+                    <div class="marker-1" tabindex="0">
+                        <svg class="marker-img-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="marker-path-1" fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z" fill="none"/>
+                        </svg>
+                    </div>
+                    <div class="marker-popap-1"></div>
+                </div>
+            </div>
+            <div class="custom-tooltip-2">
+              It should be noted that socio-economic development contributes to improving the quality of rethinking
+              foreign economic policies.
+                <div class="tooltip-2">
+                    <div id="marker2" class="marker2" tabindex="0">
+                        <svg class="marker-img-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="marker-path-2" fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z" fill="none"/>
+                        </svg>
+                    </div>
+                    <div id="markerPopap2" class="marker-popap-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

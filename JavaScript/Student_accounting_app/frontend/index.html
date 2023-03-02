@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Student Dashboard</h1>
+        <form id="add-form" action="#" class="add-form">
+            <div class="mb-3">
+                <label for="surname" class="form-label"></label>
+            <input id="surname" type="text" name="surname" placeholder="Surname" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="name" class="form-label"></label>
+            <input id="name" type="text" name="name" placeholder="Name" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="lastname" class="form-label"></label>
+            <input id="middlename" type="text" name="middlename" placeholder="Middle name" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="faculty" class="form-label"></label>
+            <input id="faculty" type="text" name="faculty" placeholder="Faculty" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="birth" class="form-label"></label>
+            <input id="birth" type="date" name="birth" placeholder="Date of Birth" class="form-control">
+            </div>
+            <div class="mb-3 last-form-input">
+                <label for="studyStart" class="form-label"></label>
+            <input id="studyStart" type="number" name="studyStart" placeholder="Year of admission" class="form-control">
+            </div>
+            <div class="form-btn">
+                <span id="form-valid" class="form-valid"></span>
+                <button id="formBtn" type="submit" class="btn btn-primary">Add student</button>
+            </div>
+
+        </form>
+
+        <form action="#" id="filter-form" class="mb-3">
+            <h2>Filtration</h2>
+            <input id="filter-form__fullName-inp" class="form-control mb-3" type="text" placeholder="Full name">
+            <input id="filter-form__faculty-inp" class="form-control mb-3" type="text" placeholder="Faculty">
+            <input id="filter-form__adm-inp" class="form-control mb-3" type="text" placeholder="Starting year">
+            <input id="filter-form__grad-inp" class="form-control mb-3" type="text" placeholder="Graduation year">
+        </form>
+
+        <div class="mb-3">
+            <button id="sort__fullName" class="btn btn-primary sort-btn">Sorting by name</button>
+            <button id="sort__faculty" class="btn btn-primary sort-btn">Sorting by faculty</button>
+            <button id="sort__DbAge" class="btn btn-primary sort-btn">Sorting by age</button>
+            <button id="sort__yearsAndCurse" class="btn btn-primary sort-btn">Sorting by year of study</button>
+        </div>
+
+        <div id="app">
+
+        </div>
+    </div>
+    <script defer src="/JS/script.js"></script>
+</body>
+
+</html>
